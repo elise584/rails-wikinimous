@@ -1,0 +1,10 @@
+<h1><%= @article.title %></h1>
+<hr></hr>
+
+<p><%= @article.content %></p>
+
+<hr></hr>
+<%= link_to "Edit article", edit_article_path(@article) %>
+<%= link_to "Delete article", article_path(@article), method: "delete" %>
+<hr></hr>
+<%= link_to "Back to list", articles_path %>
